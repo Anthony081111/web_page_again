@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Scrolling</title>
+    <link rel="stylesheet" href="html_styles.css">
+    <link rel="icon" href="C:\Users\ajh08_idy4tts\Documents\anthony_steve_wheel_of_fortune\player_pictures\Annoying_Dog.jpg">
+    <style>
+        .city {
+            background-color: green;
+            color: white;
+            padding: 70px;
+            }
+    </style>
+</head>
+<body>
+<img src="C:\Users\ajh08_idy4tts\Documents\anthony_steve_wheel_of_fortune\player_pictures\Annoying_Dog.jpg" alt="Annoying Dog Picture" height="200" width="200" align="left">
+    <style style="text/css">
+
+        .marquee {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background: red;
+            color: #333;
+            border: 1px solid #4a4a4a;
+        }
+
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            transform: translateX(100%);
+            animation: scroll-left 20s linear infinite;
+        }
+        .marquee1 {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            background: white;
+            color: #333;
+            border: 1px solid #4a4a4a;
+        }
+
+        .marquee1 p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            transform: translateX(100%);
+            animation: scroll-left 20s linear infinite;
+        }
+
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(-100%);
+            }
+           100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+
+<div class="marquee">
+     <p>
+         Loading<br>
+         Please wait<br>
+         O
+     </p>
+</div>
+<div class="marquee1">
+    <p>
+        The Random Loading dog:<br>
+        <img src="C:\Users\ajh08_idy4tts\Documents\anthony_steve_wheel_of_fortune\player_pictures\Annoying_Dog.jpg" alt="Annoying Dog Picture" height="200" width="200">
+    </p>
+</div>
+<p id="p1">Practice with HTML class and ID</p>
+<p class="city">Practice with HTML class and ID</p>
+
+<button type="button" onclick="document.write(5 + 6)">
+    _<br>
+    |_|<br>
+</button>
+<p>
+    DO NOT CLICK THAT BUTTON!!!<br>
+    IT IS A TRICK MADE BY THE DOG!!!</p>
+
+<iframe src="anthonys_1st_web_page.html" height="400" width="400"></iframe>
+
+
+</body>
+</html>

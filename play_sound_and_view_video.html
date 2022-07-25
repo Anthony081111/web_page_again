@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Sounds</title>
+    <link rel="stylesheet" href="html_styles.css">
+    <link rel="icon" href="C:\Users\ajh08_idy4tts\Documents\anthony_steve_wheel_of_fortune\player_pictures\Annoying_Dog.jpg">
+</head>
+<body>
+<audio id="myAudio">
+    <source src="https://soundbible.com/mp3/Neighborhood Dogs Barking-SoundBible.com-1499032321.mp3" type="audio/mp3">
+</audio>
+<p>Click the buttons to play or pause the audio.</p>
+<button onclick="playAudio()" type="button">Play\unpause audio: |></button>
+<button onclick="pauseAudio()" type="button">Pause audio: | |</button>
+<script>
+var x = document.getElementById("myAudio");
+function playAudio() {
+  x.play();
+}
+function pauseAudio() {
+  x.pause();
+}
+</script><br>
+<video width="500" height="400" controls>
+    <source src="front_lawn.mp4" alt="Random front lawn">
+</video>
+</body>
+</html>
