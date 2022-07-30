@@ -77,7 +77,7 @@ h1 {position: absolute;
 	-moz-animation: logo 5s ease-out 2.5s;
 	-ms-animation: logo 5s ease-out 2.5s;
 	-o-animation: logo 5s ease-out 2.5s;
-	animation: logo 10s ease-out 2.5s;
+	animation: logo 10s ease-out 2.5s infinite;
    }
     h1 sub
         { display: block;
