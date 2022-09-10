@@ -32,25 +32,50 @@
         .button4:hover {background-color: grey; color: white; }
         .button5 {background-color: white; color: black; }
         .button5:hover {background-color: black; color: white; }
+<!--    This sets the size of the div or content division element-->
+        div.relative{
+            position: relative;
+            width: 400px;
+            height: 200px; }
+        div.absolute{
+            position: absolute;
+            top: 180px;
+            left: 0px;
+            width: 200px;
+            height: 100px; }
+        .stand {transform: rotate(0deg); scaleY(0.5); scaleX(0.5); }
+        .sit {transform: rotate(90deg); scaleY(0.5); scaleX(0.5); }
+        .layOnBack {transform: rotate(180deg); scaleY(0.5); scaleX(0.5); }
+        .headStand {transform: rotate(270deg); scaleY(0.5); scaleX(0.5); }
+
+
+
     </style>
 </head>
 <body>
     <audio id="MyAudio">
-        <source src="https://soundbible.com/mp3/Neighborhood Dogs Barking-SoundBible.com-1499032321.mp3"type="audio/mp3">
+        <source src="https://soundbible.com/mp3/Neighborhood Dogs Barking-SoundBible.com-1499032321.mp3" type="audio/mp3">
     </audio>
-    <script>
-        var x = document.getElementById("MyAudio");
-        function playAudio() {x.play();}
-        function pauseAudio() {x.pause();}
-    </script>
 
     <h1>The One And Only Annoying Dog DOES NOT Respond To Commands!</h1>
     <button class="button" onclick="pauseAudio()" type="button">Speak you lazy mutt!!!</button>
     <button class="button" onclick="playAudio()" type="button">Stop it right now!!!</button>
-    <button class="button button1">Grrrey</button>
-    <button class="button button2">Blue bark</button>
-    <button class="button button3">Roll over!</button>
-    <button class="button button4">Grrreen</button>
+    <button class="button button1" id="button1" onclick="headStand()" type="button">Stand up right now!!!</button>
+    <button class="button button2" id="button2" onclick="layOnBack()" type="button">Sit your smelly butt down!!!</button>
+    <button class="button button3" id="button3" onclick="sit()" type="button">Lay on your back right this instant!!!</button>
+    <button class="button button4" id="button4" onclick="stand()" type="button">Now stand on your head!!!</button>
     <button class="button button5">Bark!</button>
+    <div class="relative">
+        <div class="absolute"><img id="extremelyAnnoyingDog"  class="stand" src="C:\Users\ajh08_idy4tts\Documents\anthony_steve_wheel_of_fortune\player_pictures\Annoying_Dog.jpg" height="400" width="400"></div>
+    </div>
+    <script>
+        var x = document.getElementById("MyAudio");
+        function playAudio() {x.play();}
+        function pauseAudio() {x.pause();}
+        function layOnBack() {document.getElementById("extremelyAnnoyingDog").className = "layOnBack"}
+        function stand() {document.getElementById("extremelyAnnoyingDog").className = "stand"}
+        function sit() {document.getElementById("extremelyAnnoyingDog").className = "sit"}
+        function headStand() {document.getElementById("extremelyAnnoyingDog").className = "headStand"}
+    </script>
 </body>
 </html>
