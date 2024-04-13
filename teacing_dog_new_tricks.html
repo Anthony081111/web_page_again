@@ -52,6 +52,8 @@
 .stand {transform: rotate(0deg) ;}
 .sit {transform: rotate(90deg) ;}
 .layOnBack {transform: rotate(180deg) ;}
+.standOnHead {transform: rotate(270deg) ;}
+.gray {
 
 </style>
 
@@ -74,11 +76,12 @@
 
 <button class="button button2" id="button2" onclick="sit()" type="button">Sit</button>
 <button class="button button3" id="button3" onclick="layOnBack()" type="button">Lay on Back</button>
+<button class="button button3" id="button4" onclick="standOnHead()" type="button">Stand on Head</button>
 <button class="button button4">Gray</button>
 <button class="button button5">Black</button>
 
 <div class="relative">
-    <div class="absolute">    <img id="dog" class="stand"  src="annoying_dog.png"  >
+    <div class="absolute">    <img id="dog" class="stand"  src="annoying_dog.png" width="234" height="270"  >
     </div>
 </div>
 
@@ -93,7 +96,7 @@ function stand() {document.getElementById("dog").className = "stand"}
 function sit() {document.getElementById("dog").className = "sit"}
 function layOnBack() {document.getElementById("dog").className = "layOnBack"}
 function goAway() {document.getElementById("dog").className = "sit"}
-
+function standOnHead() {document.getElementById("dog").className = "standOnHead"}
 
 
 
