@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Steve has not added this file to GitHub -->
+    <meta charset="UTF-8">
+    <title>Dog has been learning tricks</title>
+    <link rel="stylesheet" href="html_styles.css">
+    <link rel="icon" href="annoying_dog.png" >
+
+<style>
+
+      <!-- the following code is for the button class -->
+    .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 4s;
+        cursor: pointer;
+    }
+    .button {background-color: white; color: black; }
+    .button:hover {background-color: Yellow; color: red }
+    .button1 {background-color: white; color: black; }
+    .button1:hover {background-color: Green; color: white }
+    .button2 {background-color: white; color: black; }
+    .button2:hover {background-color: blue; color: white }
+    .button3 {background-color: white; color: black; }
+    .button3:hover {background-color: red; color: white }
+    .button4 {background-color: white; color: black; }
+    .button4:hover {background-color: grey; color: white }
+    .button5 {background-color: white; color: black; }
+    .button5:hover {background-color: black; color: white }
+
+/! This sets the size of the div or Content Division Element where the dog icon will reside
+   div.relative {
+       position: relative;
+       width: 400px;
+       height: 200px;
+    }
+
+   div.absolute {
+     position: absolute;
+     top: 180px;
+     left: 0px;
+     width: 200px;
+     height: 100px;
+   }
+.stand {transform: rotate(0deg) ;}
+.sit {transform: rotate(90deg) ;}
+.layOnBack {transform: rotate(180deg) ;}
+
+</style>
+
+
+</head>
+<body>
+
+
+<h1> The Annoying Dog responds to commands </h1>
+
+
+<audio id="myAudio">
+    <source src="https://soundbible.com/mp3/Neighborhood Dogs Barking-SoundBible.com-1499032321.mp3" type="audio/mp3">
+</audio>
+
+<button class="button"  onclick="playAudio()" type="button">Speak</button>
+<button class="button"  onclick="pauseAudio()" type="button">Quiet</button>
+
+<button class="button button1" id="button1" onclick="stand()" type="button">Stand </button>
+
+<button class="button button2" id="button2" onclick="sit()" type="button">Sit</button>
+<button class="button button3" id="button3" onclick="layOnBack()" type="button">Lay on Back</button>
+<button class="button button4">Gray</button>
+<button class="button button5">Black</button>
+
+<div class="relative">
+    <div class="absolute">    <img id="dog" class="stand"  src="annoying_dog.png"  >
+    </div>
+</div>
+
+
+
+<script>
+var x = document.getElementById("myAudio");
+function playAudio() {x.play();}
+function pauseAudio() {x.pause();}
+
+function stand() {document.getElementById("dog").className = "stand"}
+function sit() {document.getElementById("dog").className = "sit"}
+function layOnBack() {document.getElementById("dog").className = "layOnBack"}
+function goAway() {document.getElementById("dog").className = "sit"}
+
+
+
+
+
+</script>
+</body>
+</html>
