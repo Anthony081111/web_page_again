@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML with Python</title>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+     <h1>This is an attempt to run python inside an HTML webpage.</h1>
+     <py-env>
+         - matplotlib
+     </py-env>
+     <div></div>
+    <py-script>
+        import matplotlib.pyplot as plt
+        from matplotlib.ticker import AutoMinorLocator, MultipleLocator
+
+        # GRAPH ONE
+        # Define speed and time values for data points
+        fig, a1 = plt.subplots ()
+        speed = [10, 10, 10, 10, 10, 10]
+        time = [0, 1, 2, 3, 4, 5]
+
+        # Plot speed vs time
+        plt.plot(time, speed, color="black")
+        plt.fill_between(time, speed, color="orange", alpha=0.5)   # fill the area below the curve
+        plt.title("Graph 01 -- Constant Speed")
+        plt.xlabel("Time (hours)")
+        plt.ylabel("Speed (miles/hour)")
+
+        # Show the unit grid on the graph
+        plt.grid(True)
+        plt.yticks(range(0, max(speed)+1, 1))
+        plt.xticks(range(min(time), max(time)+1, 1))
+
+        # Show the graph
+        plt.show()
+    </py-script>
+
+
+</body>
+</html>
