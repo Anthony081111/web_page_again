@@ -14,17 +14,19 @@
     <py-script>
         import matplotlib.pyplot as plt
         from matplotlib.ticker import AutoMinorLocator, MultipleLocator
+        speed1 = input("Input a number.")
+        print(speed1)
 
         # GRAPH ONE
         # Define speed and time values for data points
         fig, a1 = plt.subplots ()
-        speed = [10, 10, 10, 10, 10, 10]
-        time = [0, 1, 2, 3, 4, 5]
+        speed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        time = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
         # Plot speed vs time
         plt.plot(time, speed, color="black")
         plt.fill_between(time, speed, color="orange", alpha=0.5)   # fill the area below the curve
-        plt.title("Graph 01 -- Constant Speed")
+        plt.title("Graph 02 -- Increasing Speed")
         plt.xlabel("Time (hours)")
         plt.ylabel("Speed (miles/hour)")
 

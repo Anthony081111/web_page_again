@@ -23,36 +23,9 @@ p#start
 	color: #4ee;
 	opacity: 0;
 	z-index: 1;
-	-webkit-animation: intro 4s ease-out;
-	-moz-animation: intro 2s ease-out;
-	-ms-animation: intro 2s ease-out;
-	-o-animation: intro 2s ease-out;
 	animation: intro 2s ease-out;
 }
 
-@-webkit-keyframes intro {
-	0% { opacity: 1; }
-	90% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-@-moz-keyframes intro {
-	0% { opacity: 1; }
-	90% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-@-ms-keyframes intro {
-	0% { opacity: 1; }
-	90% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-@-o-keyframes intro {
-	0% { opacity: 1; }
-	90% { opacity: 1; }
-	100% { opacity: 0; }
-}
 
 @keyframes intro {
 	0% { opacity: 1; }
@@ -73,7 +46,7 @@ h1 {position: absolute;
 	text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
 	opacity: 0;
 	z-index: 1;
-	animation: logo 5s ease-out 4.5s infinite;
+	animation: logo 15s ease-out 9s infinite;
     }
     h1 sub
         { display: block;
@@ -100,15 +73,7 @@ h1 {position: absolute;
 	font-size: 350%;
 	text-align: justify;
 	overflow: hidden;
-	-webkit-transform-origin: 50% 100%;
-	-moz-transform-origin: 50% 100%;
-	-ms-transform-origin: 50% 100%;
-	-o-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
-	-webkit-transform: perspective(300px) rotateX(25deg);
-	-moz-transform: perspective(300px) rotateX(25deg);
-	-ms-transform: perspective(300px) rotateX(25deg);
-	-o-transform: perspective(300px) rotateX(25deg);
 	transform: perspective(300px) rotateX(10deg);
 }
 
@@ -120,10 +85,6 @@ h1 {position: absolute;
 	right: 0;
 	top: 0;
 	bottom: 60%;
-	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 	pointer-events: none;
 }
@@ -149,34 +110,10 @@ h1 {position: absolute;
 {
 	position: absolute;
 	top: 100%;
-	-webkit-animation: scroll 50s linear 4s infinite;
-	-moz-animation: scroll 50s linear 4s infinite;
-	-ms-animation: scroll 50s linear 4s infinite;
-	-o-animation: scroll 50s linear 4s infinite;
 	animation: scroll 10s linear 4s infinite;
 }
 
 /* animation */
-@-webkit-keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
-}
-
-@-moz-keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
-}
-
-@-ms-keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
-}
-
-@-o-keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
-}
-
 @keyframes scroll {
 	0% { top: 100%; }
 	100% { top: -170%; }
