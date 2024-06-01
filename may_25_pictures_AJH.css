@@ -14,7 +14,13 @@ h1 {color: red; text-align: center; }
 
 .proj2 {background-color: green; }
 
-.child {display: inline-block; width: 400px; }
+.child {display: inline-block;
+        width: 400px;
+        height: 600px;
+        overflow: scroll;
+        text-align: center;
+}
 
-.picSticky {position: sticky; top: 0; }
+.picStickyBottom {position: sticky; bottom: 0; }
+.picStickyTop {position: sticky; right: 0; }
 
